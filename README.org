@@ -7,10 +7,10 @@ It is forked from https://code.google.com/p/ctouch/source/browse/undisposition/.
 
 * Description of Original Version
   Sometimes you want to see files in Chrome inline, but Chrome started to download it.
-  This is quite irritating. This extension relaxes this behavior.[fn:: https://chrome.google.com/webstore/detail/undisposition/hjfncfijclafkkfifjelofbeclipplfi?hl=en]
+  This is quite irritating. This extension relaxes this behavior.[fn:1]
 
 * このChrome拡張について
-  HTTP ヘッダから Content-Disposition[fn:: http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html#sec19.5.1] を除くことでファイルがダウンロードされるのを防ぎ，直接ブラウザで開けるようにする拡張です．
+  HTTP ヘッダから Content-Disposition[fn:2] を除くことでファイルがダウンロードされるのを防ぎ，直接ブラウザで開けるようにする拡張です．
   フォーク元のバージョンに，ブラウザで開くかどうか確認する処理を追加したものです．
   Chrome, Chromium, SRWareIron, ComodoDragon, Maxthon, Safari, Operaで動作するはずです．
 
@@ -23,3 +23,6 @@ It is forked from https://code.google.com/p/ctouch/source/browse/undisposition/.
 * License
   Licensed under 2-clause BSDL.
   The original copyright notice (=COPYING.md=) is included as =COPYING-original.md=.
+
+[fn:1] https://chrome.google.com/webstore/detail/undisposition/hjfncfijclafkkfifjelofbeclipplfi?hl=en
+[fn:2] http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html#sec19.5.1
