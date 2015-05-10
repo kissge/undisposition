@@ -4,7 +4,9 @@ chrome.webRequest.onHeadersReceived.addListener(
 		var headers=details.responseHeaders;
 		for(var i=0;i<headers.length;i++){
 			if(headers[i].name.toLowerCase()=='content-disposition'){
-				if(headers[i].value.indexOf('attachment')==0){
+				if(headers[i].value.indexOf('attachment')==0 &&
+				   confirm('A file is being forced to be saved as "' + headers[i].value.match(/filename="(.*?)"/)[1] +
+					   '" by the server\'s configuration.\nIgnore it and just open with this browser?')) {
 					headers.splice(i,1);
 					//headers[i].value='inline';
 				}
