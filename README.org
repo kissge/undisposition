@@ -1,0 +1,25 @@
+#+TITLE: Undispotision
+#+AUTHOR: kissge (KISUGE, Yuto)
+#+OPTIONS: f:t
+
+Undispotision is a Chrome extension that enables users to choose whether to download the file or to open with the browser.
+It is forked from https://code.google.com/p/ctouch/source/browse/undisposition/.
+
+* Description of Original Version
+  Sometimes you want to see files in Chrome inline, but Chrome started to download it.
+  This is quite irritating. This extension relaxes this behavior.[fn:: https://chrome.google.com/webstore/detail/undisposition/hjfncfijclafkkfifjelofbeclipplfi?hl=en]
+
+* このChrome拡張について
+  HTTP ヘッダから Content-Disposition[fn:: http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html#sec19.5.1] を除くことでファイルがダウンロードされるのを防ぎ，直接ブラウザで開けるようにする拡張です．
+  フォーク元のバージョンに，ブラウザで開くかどうか確認する処理を追加したものです．
+  Chrome, Chromium, SRWareIron, ComodoDragon, Maxthon, Safari, Operaで動作するはずです．
+
+* インストール方法
+  1. =chrome://extensions= を開く
+  2. 「開発者モード」にチェックボックスが入っていなければ入れる
+  3. 「パッケージ化されていない拡張機能を読み込む...」
+  4. =manifest.json= のあるディレクトリを指定する
+
+* License
+  Licensed under 2-clause BSDL.
+  The original copyright notice (=COPYING.md=) is included as =COPYING-original.md=.
